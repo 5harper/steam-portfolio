@@ -115,6 +115,24 @@ li,a, h3{
 
 }
 
+.software {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    grid-auto-rows: auto;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+.download{
+    height: 400px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 100px;
+    box-shadow: 0px 0px 10px black;
+}
+
 .showcase {
     width: 100%;
     height: 400px;
@@ -125,18 +143,23 @@ li,a, h3{
 }
 .picture {
     flex: 3;
-    height: 100%;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 4px -3px 2px rgba(0, 0, 0, 0.303),0px 0px 5px rgba(0, 0, 0, 0.319)
-    ;
+    box-shadow: 4px -3px 2px rgba(0, 0, 0, 0.303),0px 0px 5px rgba(0, 0, 0, 0.319);
 }
+
+.picture.top{
+    height: 100%;
+    
+}
+
 .picture img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 100% 50%;
+    object-position: 40% 40%;
 
 }
 .dial{
@@ -207,6 +230,25 @@ li,a, h3{
     grid-column: span 1;
     grid-row: span 3;
 }
+
+.tall{
+    height: auto;
+}
+.download-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2286f1;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .download-link:hover {
+    background-color: #89c2ff;
+  }
 
 .art-project.video {
     grid-column: span 2;
@@ -342,6 +384,7 @@ hr{
     flex: 1; 
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     justify-content: center; 
     color: white;
     padding: 7px;
